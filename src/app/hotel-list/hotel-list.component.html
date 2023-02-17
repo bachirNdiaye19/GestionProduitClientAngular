@@ -1,0 +1,16 @@
+<div class="container">
+    <h1 *ngIf="hotels.length > 0">{{title}}</h1>
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col mb-4" *ngFor="let hotel of hotels">
+            <div class="card">
+                <img class="card-img-top" src="{{hotel.imageUrl}}" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{hotel.NomHotel}}</h5>
+                    <p class="card-text">{{hotel.Lieu}}</p>
+                    <p class="card-text">{{hotel.Id}}</p>
+                    <a href="#" class="btn btn-primary">RESERVER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
